@@ -1,0 +1,20 @@
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css"/>
+    <title>PDF Reader - Simple</title>
+    <meta name="author" content="Emre Bostan | emrebostan.com">
+    <meta name="web_author" content="Emre Bostan | emrebostan.com">
+</head>
+<!-- Disable right click -->
+<body oncontextmenu="return false;">
+<script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+<div id="paginator">
+    <button id="prev"><i class="fas fa-chevron-left"></i></button>
+    <span><!--current page text:-->Şuanki Sayfa: <span id="page_num"></span> / <span id="page_count"></span></span>
+    <button id="next"><i class="fas fa-chevron-right"></i></button>
+</div>
+<canvas id="the-canvas"></canvas>
+<script src="main.js"></script>
+</body>
+</html>

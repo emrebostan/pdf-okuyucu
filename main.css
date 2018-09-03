@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #525659;
+}
+body canvas{
+    margin:auto;
+    display:block;
+    /* height: 100%; */
+}
+body:hover #paginator{
+    opacity:1;
+}
+#paginator{
+    position:fixed;
+    left:0;
+    right:0;
+    bottom: 5px;
+    margin: auto;
+    text-align: center;
+    opacity: 0;
+    transition: all 200ms;
+}
+#paginator #prev:hover,#paginator #next:hover{
+    opacity:0.8;
+}
+#paginator #prev,#paginator #next{
+    border: none;
+    -webkit-appearance: none;
+    background: #dc7200;
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    padding: 10px 14px;
+    outline: none;
+    cursor: pointer;
+}
+#paginator > span{
+    display: inline-block;
+    background: white;
+    padding: 10px 14px;
+    border-radius: 15px;
+    border: 1px solid #CCC;
+    position: relative;
+    top: -4px;
+    cursor: default;
+    user-select: none;
+}
